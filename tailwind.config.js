@@ -4,7 +4,15 @@ module.exports = {
     './components/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      truncate: {
+        lines: {
+          3: '3',
+          5: '5',
+          8: '8',
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-truncate-multiline')()],
 };
