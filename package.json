@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@modulz/radix-icons": "^4.0.0",
     "@prisma/client": "^3.8.1",
     "autoprefixer": "^10.4.2",
     "babel-plugin-superjson-next": "^0.4.2",

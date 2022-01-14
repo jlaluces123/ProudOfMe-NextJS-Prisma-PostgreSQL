@@ -102,6 +102,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@modulz/radix-icons@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@modulz/radix-icons/-/radix-icons-4.0.0.tgz#628a7826a4569dd2e3331e266d8d2e26c7d6753c"
+  integrity sha512-d79T4cYvMGMocVC/q1WiMO578FPFfUoxmXIkduc8cUQAPDr7thuEV5HrCHhqqqkoVaYD0QPct180ilcNUyGPrg==
+
 "@next/env@12.0.8":
   version "12.0.8"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.0.8.tgz#a32ca0a97d464307f2e6ff106ce09b19aac108cf"

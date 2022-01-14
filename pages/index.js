@@ -1,45 +1,29 @@
 import prisma from '../lib/prisma';
+import PublicFeed from '../components/PublicFeed';
+import { PlusIcon, BellIcon } from '@modulz/radix-icons';
 
 export default function Home({ feed }) {
   return (
-    <div className='bg-gray-200 h-screen'>
-      <div className='mx-20 pt-20'>
-        <h1 className='text-3xl font-extrabold'>Public Feed</h1>
-        <ul className='h-full m-10 flex flex-col'>
-          {feed.map((post) => {
-            return (
-              <div className='bg-white p-8 rounded-md' key={post.id}>
-                <li key={post.id}>
-                  <div className='flex flex-row justify-between'>
-                    <h2 className='text-xl font-bold hover:underline cursor-pointer'>
-                      {post.title}
-                    </h2>
-                    <p className='font-lg font-semibold hover:underline cursor-pointer'>
-                      <span className='text-gray-400 text-xs'>made by: </span>{' '}
-                      {post.author.name}
-                    </p>
-                  </div>
-                  <p className='mt-4 text-gray-600 truncate-3-lines'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odit iure, in nulla fuga culpa eum dolore excepturi nobis
-                    consequuntur quo quasi veniam. Distinctio voluptatibus optio
-                    provident nostrum magnam sint facere quam temporibus officia
-                    non ratione, rem eveniet, porro aliquam ea expedita commodi
-                    ducimus nisi iure voluptas necessitatibus! Hic reiciendis,
-                    ratione nisi illo ea officia, adipisci similique inventore
-                    quos quas, praesentium nulla nemo enim error. Aperiam
-                    tempore id harum doloribus. Quos harum sequi, amet vel
-                    cupiditate repellendus! Dicta blanditiis asperiores corporis
-                    beatae natus iste quae eveniet maiores explicabo esse
-                    quibusdam, molestias distinctio. Vitae culpa eos, quidem
-                    unde repudiandae quo magnam autem.
-                  </p>
-                </li>
-              </div>
-            );
-          })}
-        </ul>
+    <div className='bg-gray-100 min-h-screen h-full'>
+      {/* Navigation */}
+      <div className='bg-white h-24 flex items-center justify-between px-20'>
+        <h1 className='text-4xl text-gray-800 font-extrabold cursor-pointer'>
+          ProudOf.Me
+        </h1>
+        <div className='flex flex-row justify-evenly items-center w-1/5'>
+          <button className='px-5 py-3 bg-blue-500 rounded-lg flex flex-row items-center'>
+            <PlusIcon color='white' />
+            <span className='text-white font-lg ml-2 font-semibold'>
+              Create
+            </span>
+          </button>
+          <button className='bg-gray-300 rounded-md h-8 w-8' />
+          <button className='bg-gray-300 rounded-md h-8 w-8' />
+          <button className='bg-blue-300 rounded-full h-14 w-14' />
+        </div>
       </div>
+      {/* Navigation End */}
+      <PublicFeed feed={feed} />
     </div>
   );
 }
