@@ -31,6 +31,7 @@ export default function Home({ feed }) {
 export const getStaticProps = async () => {
   const feed = await prisma.post.findMany({
     where: { published: true },
+    orderBy: { createdAt: 'desc' },
     include: {
       author: {
         select: { name: true },

@@ -17,19 +17,8 @@ export default function PublicFeed({ feed }) {
                   </p>
                 </div>
                 <p className='mt-4 w-11/12 text-gray-600 truncate-3-lines'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  iure, in nulla fuga culpa eum dolore excepturi nobis
-                  consequuntur quo quasi veniam. Distinctio voluptatibus optio
-                  provident nostrum magnam sint facere quam temporibus officia
-                  non ratione, rem eveniet, porro aliquam ea expedita commodi
-                  ducimus nisi iure voluptas necessitatibus! Hic reiciendis,
-                  ratione nisi illo ea officia, adipisci similique inventore
-                  quos quas, praesentium nulla nemo enim error. Aperiam tempore
-                  id harum doloribus. Quos harum sequi, amet vel cupiditate
-                  repellendus! Dicta blanditiis asperiores corporis beatae natus
-                  iste quae eveniet maiores explicabo esse quibusdam, molestias
-                  distinctio. Vitae culpa eos, quidem unde repudiandae quo
-                  magnam autem.
+                  {post.content ||
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum ex dolores doloremque! Accusamus sint laboriosam consequuntur nobis! Quibusdam iure doloribus veritatis eum animi, officiis repellendus enim adipisci quas et, sapiente dolores voluptates a, cum itaque. Blanditiis sequi cum aut at nulla minus deserunt officia rerum, ratione iure, ut omnis magni voluptates quia cumque. Quibusdam saepe reprehenderit illo perspiciatis pariatur nesciunt ratione adipisci numquam iure at repellat sequi, alias consectetur ullam temporibus vero similique iste, animi ad dicta! Deleniti esse voluptate earum a dicta, quibusdam dignissimos ipsa maxime dolore dolorem iure, harum error minus rem! Possimus ducimus vero modi cumque!'}
                 </p>
               </li>
             </div>
